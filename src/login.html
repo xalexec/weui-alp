@@ -1,0 +1,69 @@
+
+{{footer:
+<script type="text/javascript" src="assets/scripts/users/login.js"></script>
+}}
+{{noNav:true}}
+
+
+<script id="page_login" type="text/html">
+    <div class="page">
+        <div class="hd">
+            <h1 class="page_title">登录</h1>
+        </div>
+        <div class="bd weui_msg">
+            <div class="weui_cells weui_cells_form weui_cells_checkbox">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label class="weui_label">手机号</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" id="mobile" type="number" placeholder="请输入手机号"/>
+                    </div>
+                </div>
+                <!-- <label class="weui_cell weui_check_label" for="s11">
+                     <div class="weui_cell_hd">
+                         <input type="checkbox" class="weui_check" name="checkbox1" id="s11" checked="checked">
+                         <i class="weui_icon_checked"></i>
+                     </div>
+                     <div class="weui_cell_bd weui_cell_primary">
+                         <p>已阅读并同意<a href="#">用户注册协议</a></p>
+                     </div>
+                </label>-->
+            </div>
+            <div class="weui_btn_area">
+                <a class="weui_btn weui_btn_primary" href="javascript:" id="next">下一步</a>
+            </div>
+
+        </div>
+    </div>
+</script>
+<script id="page_next" type="text/html">
+    <div class="page">
+        <div class="hd">
+            <h1 class="page_title">登录</h1>
+        </div>
+        <div class="bd weui_msg">
+            <div class="weui_cells weui_cells_form weui_cells_checkbox">
+                <div class="weui_cell">
+                    <div class="weui_cell_hd"><label class="weui_label">验证码</label></div>
+                    <div class="weui_cell_bd weui_cell_primary">
+                        <input class="weui_input" type="number" placeholder="请输入验证码"/>
+                    </div>
+                </div>
+                <!-- <label class="weui_cell weui_check_label" for="s11">
+                     <div class="weui_cell_hd">
+                         <input type="checkbox" class="weui_check" name="checkbox1" id="s11" checked="checked">
+                         <i class="weui_icon_checked"></i>
+                     </div>
+                     <div class="weui_cell_bd weui_cell_primary">
+                         <p>已阅读并同意<a href="#">用户注册协议</a></p>
+                     </div>
+                </label>-->
+            </div>
+            <div class="weui_btn_area">
+                <a class="weui_btn weui_btn_primary" href="javascript:" id="enter">登录</a>
+            </div>
+            <div class="weui_btn_area">
+                <a class="weui_btn weui_btn_primary weui_btn_disabled" href="javascript:" id="replay">60秒后重新发送验证码</a>
+            </div>
+        </div>
+    </div>
+</script>
