@@ -4,7 +4,10 @@ var $config ={
 }
 $(function() {
     FastClick.attach(document.body);
-
+    $(".weui_tabbar_item").on('click', function () {
+        $(".weui_tabbar_item").removeClass('active');
+        $(this).addClass('active');
+    });
 
 
 

@@ -68,6 +68,14 @@ gulp.task('source', ['layout'], function () {
 
             if (o.noNav) {
                 $(".ui-nav").remove();
+            }else{
+                var url= file.path.replace(/.*[\/\\]/,'');
+                console.log(url)
+                var li = $(".weui_tabbar").find("a[href='"+ url +"']");
+                console.log(li.length)
+                li.addClass('active');
+                //  $(content).find("")
+                //file.contents = new Buffer($.html());
             }
             file.contents = new Buffer($.html());
         }))

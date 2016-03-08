@@ -271,3 +271,16 @@ body,html {
   bottom: 0;
   height: 56px;
 }
+/** overwrite **/
+.weui_tabbar_icon + .weui_tabbar_label {
+  margin-top: 12px;
+}
+.weui_tabbar_item{
+  padding:0;
+}
+.weui_tabbar_icon{
+  color: #888;
+}
+.weui_tabbar>a.active>.weui_tabbar_label,.weui_tabbar>a.active,.weui_tabbar>a.active>.weui_tabbar_icon{
+  color: #05be03;
+}
