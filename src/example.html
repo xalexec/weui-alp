@@ -21,5 +21,22 @@
 <script id="page_pull" type="text/html" src="example/pull.html"></script>
 
 
-
 <script id="tpl_pull" type="text/html" src="example/tpl_pull.html"></script>
+
+<script type="text/javascript">
+    $(function () {
+        var button = document.getElementById('button');
+        var audio = document.getElementById('audio');
+
+        var onClick = function() {
+            alert(1)
+            var audi = new Audio('/assets/music/Tock 1.wav')
+            audi.play();
+            audi.currentTime = 0;
+            audi = null;
+        };
+        button.addEventListener('click', onClick, false);
+    })
+
+
+</script>
